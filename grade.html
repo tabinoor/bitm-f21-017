@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade</title>
+</head>
+<body>
+    <script>
+       var name= prompt("write your name");
+       var m101=prompt("write you Grade point in oop");
+       var m102 = prompt("write your Grade point in networking");
+       var m103 = prompt("write your Grade point in physics");
+       var m104 = prompt("write your Grade point in linear");
+       var m105 = prompt("write your Grade point in technical skills");
+       var qp = m101*3 +m102*3+ m103*3+ m104*2 +m105*3;
+       var cu =3+3+3+2+3;
+       var gpa=qp/cu;
+      document.write("<h1> HI! "+name);
+
+       if(gpa >= 4){
+        document.write("<h1>YOUR GPA IS 4 <\h1>")
+        document.write("<h1>Grade A<\h1>");
+       }
+    
+       else if((gpa<=4 )&& (gpa>3.5)){
+        var a=gpa.toFixed(1);
+        document.write("<h1>YOUR GPA IS <\h1>"+a)
+        document.write("<h1>Grade B<\h1>");
+       }
+       else if((gpa<=3.5)&& (gpa>3)){
+        var a=gpa.toFixed(1);
+        document.write("<h1>YOUR GPA IS <\h1>"+a)
+        document.write("<h1>Grade C<\h1>");
+       }
+
+       
+       else if((gpa<=3 )&& (gpa>2.5)){
+        var a=gpa.toFixed(1);
+        document.write("<h1>YOUR GPA IS <\h1>"+a)
+        document.write("<h1>Grade D<\h1>");
+       }
+       else if((gpa<=2.5)&& (gpa>2)){
+        var a=gpa.toFixed(1);
+        document.write("<h1>YOUR GPA IS <\h1>"+a)
+        document.write("<h1>Grade E<\h1>");
+       }
+       else{
+        document.write("you fail");
+       }
+
+    </script>
+</body>
+</html>
